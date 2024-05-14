@@ -1,0 +1,27 @@
+#Purpose
+Catalogs stock items in inventory, allowing addition, updating, and removal of item records
+#Design Decisions
+Modular Design: The codebase is divided into functions and modules to enhance readability and maintainability.
+Input Validation: Input validation is implemented to ensure that users provide valid row and column values when making reservations.
+#Algorithms Used
+NO
+#Data Structures Employed
+2d vector
+map
+file
+#Functions/Modules Created
+void add(const string& category, const Item& item)
+void update(const string& category, const string& itemName, const Item& updatedItem)
+void remov(const string& category, const string& itemName)
+void removeCategory(const string& category)
+void show()
+void save(const string& filename)
+void load(const string& filename)
+#librarys used
+#include <iostream>
+#include <map>
+#include <vector>
+#include <list>
+#include <string>
+#include <algorithm>
+#include <fstream>
