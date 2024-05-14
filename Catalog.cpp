@@ -38,7 +38,7 @@ public:
     void remov(const string& category, const string& itemName) {// удаляет определенный предмет
         auto& items = inventory[category];
         auto beforeSize = items.size();
-        items.erase(std::remove_if(items.begin(), items.end(),
+        items.erase(remove_if(items.begin(), items.end(),
             [&](const Item& item) { return item.name == itemName; }),
             items.end());
         if (items.size() != beforeSize)
