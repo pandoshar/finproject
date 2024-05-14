@@ -1,0 +1,7 @@
+Electro
+Laptop 50 950
+Notebook 100 20
+
+holod
+holodilnik 20 500
+
